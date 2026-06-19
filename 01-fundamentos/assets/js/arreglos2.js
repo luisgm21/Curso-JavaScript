@@ -21,4 +21,10 @@ console.log({ juegoBorrado, juegos });
 
 let pos = 1;
 let juegosBorrados = juegos.splice(pos, 2);
-console.log({ juegosBorrados, juegos });  
+console.log({ juegosBorrados, juegos });
+
+let metroidIndex = juegos.indexOf('Metroid');
+if (metroidIndex >= 0) {
+  juegos.splice(metroidIndex, 1);
+}
+console.log({ metroidIndex, juegos });
