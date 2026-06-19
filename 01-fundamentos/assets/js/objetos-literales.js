@@ -32,3 +32,28 @@ console.log("Vivo: ", personaje[x]);
 
 console.log("Última película: ", personaje['ultima-pelicula']);
 
+// Detalles 
+delete personaje.edad;
+console.log(personaje);
+
+const entriesPares = Object.entries(personaje)
+
+console.log(entriesPares);
+
+personaje.casado = true;
+
+
+// Metodo para congelar el objeto, no se pueden agregar, eliminar o modificar propiedades, pero si se pueden modificar los objetos anidados
+Object.freeze(personaje);
+
+
+personaje.direccion.ubicacion = 'Argentina';
+personaje.casado = false;
+
+console.log(personaje)
+
+const propiedades = Object.getOwnPropertyNames(personaje);
+const valores = Object.values(personaje);
+
+console.log({propiedades, valores});
+
