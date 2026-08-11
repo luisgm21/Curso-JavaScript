@@ -39,3 +39,23 @@ console.log(false || false); // false
 console.log( regresaTrue() || regresaFalse() );
 
 console.log( "4 condiciones: ",true || true || true || false)
+
+console.warn("Asignaciones");
+
+const soyUndefined = undefined;
+const soyNull = null;
+const soyFalso = false;
+
+const c1 = true  && "Hola mundo" && 150
+const c2 = "Hola" && "Mundo" && soyFalso && true
+const c3 = soyFalso || "Ya no soy falso"
+const c4 = soyFalso || soyUndefined || soyNull || "Ya no soy falso de nuevo" || true
+const c5 = soyFalso || soyUndefined || regresaTrue() || "Ya no soy falso de nuevo" || true
+
+console.log({c1, c2, c3, c4, c5});
+
+if (regresaFalse() && regresaTrue() && (true || true || false)) {
+  console.log("Hacer algo");
+} else {
+  console.log("No hacer nada");
+}
