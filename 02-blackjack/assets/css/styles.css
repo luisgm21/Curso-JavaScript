@@ -3,6 +3,11 @@ html, body{
   background-color: #2F4F30;
 }
 
+h1 {
+  color:beige;
+  margin-left: 1rem;
+}
+
 .titulo{
   text-align: center;
   background-color: black;
