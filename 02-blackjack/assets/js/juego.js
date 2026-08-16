@@ -7,6 +7,14 @@ let deck = [];
 const tipos = ['C','D','H','S'];
 const especiales = ['A','J','Q','K'];
 
+let puntosJugador = 0,
+    puntosComputadora = 0;
+
+// Referencias del HTML
+
+const btnPedir = document.querySelector('#btnPedir');
+const puntosHTML = document.querySelectorAll('small')
+
 const crearDeck = () => {
   for(let i = 2; i <= 10; i++){
     for(let tipo of tipos){
@@ -20,8 +28,6 @@ const crearDeck = () => {
   }
 
   deck = _.shuffle(deck);
-
-  console.log(deck);
 
   return deck;
 }
@@ -52,6 +58,15 @@ const valorCarta = (carta)=>{
         : valor * 1;
 }
 
+// Eventos
+btnPedir.addEventListener('click', () => {
 
-// pedirCarta();
+  const carta = pedirCarta();
+  puntosJugador = puntosJugador + valorCarta(carta);
+  puntosHTML[0].innerText = puntosJugador;
+
+});
+
+
+
 
