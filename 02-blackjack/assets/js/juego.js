@@ -34,7 +34,6 @@ const pedirCarta = () => {
 
   let carta = deck.pop();
 
-  console.log({carta, deck});
   return carta;
 }
 
@@ -53,11 +52,6 @@ const valorCarta = (carta)=>{
         : valor * 1;
 }
 
-console.log(valorCarta('AD'))
-
-console.log(valorCarta('QD'))
-
-console.log(valorCarta('9D'))
 
 // pedirCarta();
 
