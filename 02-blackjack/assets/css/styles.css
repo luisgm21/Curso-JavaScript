@@ -26,3 +26,43 @@ h1 {
 #computadora-cartas,#jugador-cartas{
   height: 240px;
 }
+
+dialog {
+  width: min(90vw, 380px);
+  padding: 2rem;
+  border: 3px solid #d4af37;
+  border-radius: 8px;
+  background: #111;
+  color: beige;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, .65);
+}
+
+dialog h1 {
+  margin: 0 0 .75rem;
+  color: #d4af37;
+  font-size: 2rem;
+}
+
+dialog p {
+  margin-bottom: 1.5rem;
+  color: whitesmoke;
+}
+
+dialog button {
+  padding: .55rem 1.4rem;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  background: #2f4f30;
+  color: beige;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background: #3d6840;
+}

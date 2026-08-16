@@ -29,7 +29,6 @@
     <div class="col">
       <h1>Jugador 1 - <small>0</small></h1>
       <div id="jugador-cartas">
-        <img class="carta" src="assets/cartas/AS.png" alt="">
       </div>
     </div>
   </div>
@@ -38,10 +37,25 @@
     <div class="col">
       <h1>Computadora - <small>0</small></h1>
       <div id="computadora-cartas">
-        <img class="carta" src="assets/cartas/AC.png" alt="">
       </div>
     </div>
   </div>
+
+  <dialog id="modal-victoria" closedby="any">
+    <h1>¡Felicidades!</h1>
+    <p>Ganaste la partida</p>
+    <form>
+      <button formmethod="dialog" id="btnCerrar-victoria">Cerrar</button>
+    </form>
+  </dialog>
+
+  <dialog id="modal-derrota" closedby="any">
+    <h1>¡Lo siento!</h1>
+    <p>Perdiste la partida</p>
+    <form>
+      <button formmethod="dialog" id="btnCerrar-derrota">Cerrar</button>
+    </form>
+  </dialog>
 
   <script src="assets/js/underscore-min.js"></script>
   <script src="assets/js/juego.js"></script>
