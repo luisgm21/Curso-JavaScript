@@ -81,16 +81,16 @@ const turnoComputadora = (puntosMinimos) => {
 
 // Determinar ganador
 const determinarGanador = () => {
-  if(puntosComputadora === puntosJugador || (puntosJugador > 21)){
+  if(puntosJugador > 21){
     console.warn('Computadora gana');
     modalDerrota.showModal();
   } else if (puntosComputadora > 21){
     console.warn('Jugador gana');
     modalVictoria.showModal();
-  } else if( puntosComputadora > puntosJugador){
+  } else if( puntosComputadora >= puntosJugador){
     console.warn('Computadora gana');
     modalDerrota.showModal();
-  } else if (puntosJugador > puntosComputadora){
+  } else {
     console.warn('Jugador gana');
     modalVictoria.showModal();
   }
