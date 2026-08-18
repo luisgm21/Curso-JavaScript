@@ -23,7 +23,7 @@ h1 {
   margin-left: -75px;
 }
 
-#computadora-cartas,#jugador-cartas{
+.divCartas {
   height: 240px;
 }
 
